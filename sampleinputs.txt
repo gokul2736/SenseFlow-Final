@@ -1,0 +1,74 @@
+🏢 Category 1: Business Email Compromise (BEC) & Invoice Fraud
+Why SenseFlow wins: These have no malicious links, so basic scanners pass them. RoBERTa will flag the anomalous NLP context, and RAG will match the "Invoice Spoofing" tactic.
+
+The Vendor Bank Change:
+
+"Hi Accounts Payable, due to our ongoing internal financial audit, we have temporarily suspended our Chase routing. Please update the remittance details for Invoice #88492 to the attached ACH instructions before EOD to avoid late fees. Let me know when this is updated."
+
+The Payroll Redirect:
+
+"Hello HR, I recently changed my banking institution and need to update my direct deposit information for the upcoming payroll cycle. Can you please process this change manually today? I have attached my new voided check details."
+
+The Silent Acquisition:
+
+"As discussed in the confidential board meeting, we are moving forward with the Project Alpha acquisition. Wire $45,000 to the escrow account listed below for the retainer. Do not discuss this over Slack until the press release is finalized tomorrow."
+
+🔐 Category 2: Credential Harvesting & Cloud Spoofing
+Why SenseFlow wins: Heuristics will catch the mismatched/hidden URLs, and RoBERTa will catch the manufactured urgency.
+
+The DocuSign Trap:
+
+"You have a secure document pending your signature regarding the Q3 Non-Disclosure Agreements. This link will expire in 24 hours. Please authenticate using your corporate SSO to view the file: http://docusign-auth-gateway-secure.net/login"
+
+Office 365 Expiry:
+
+"Microsoft Exchange Alert: Your enterprise password is set to expire in 2 hours. Failure to update your credentials will result in a temporary lock on your Outlook and Teams accounts. Keep your current password by verifying here: http://portal-office365-sync.com/auth"
+
+Google Workspace Storage:
+
+"Warning: Your Google Workspace Drive has reached 99% capacity. Incoming emails are currently being queued and may be deleted. Upgrade your storage allocation immediately using your admin portal: http://admin-workspace-billing-update.org/"
+
+🚨 Category 3: IT Helpdesk & Security Spoofing
+Why SenseFlow wins: These exploit trust. RAG will immediately identify these as "IT Impersonation vectors."
+
+The Mandatory VPN Patch:
+
+"IT Advisory: We have detected unpatched vulnerabilities on your machine's VPN client. To maintain remote access privileges, you must install the security certificate update immediately. Download the patch here: http://vpn-cisco-patch-internal.net/download"
+
+MFA Token Desync:
+
+"Security Alert: Your Multi-Factor Authentication (MFA) token has desynchronized from the central server. You will be locked out of the corporate network at midnight. Please resync your authenticator app using the self-service portal: http://okta-sync-portal.com/"
+
+Fake Ticket Closure:
+
+"Service Desk: Ticket #INC099813 has been marked as RESOLVED. If you are still experiencing login issues, please do not reply to this email. Click here to reopen your ticket and re-authenticate your session: http://servicedesk-recovery.com/ticket"
+
+💸 Category 4: Extortion & Crypto Scams
+Why SenseFlow wins: Your Heuristic RegEx scanner will light up like a Christmas tree when it sees the Bitcoin wallet structures and extortion keywords.
+
+The Password Blackmail:
+
+"I know your password is 'Hunter2'. I installed a zero-click malware on your system last month and have recorded your webcam. Send 0.05 BTC to this wallet address: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa within 48 hours, or I will send the video to your contacts."
+
+The Fake IRS/Tax Audit:
+
+"FINAL NOTICE: The IRS has filed a lawsuit against you for tax evasion regarding your 2024 filings. An arrest warrant will be issued under your name. To resolve this immediately outside of court, remit your penalty payment via cryptocurrency transfer."
+
+The Cryptojacking Lure:
+
+"Congratulations! Your wallet has been randomly selected in the Binance promotional giveaway. You have won 2.5 ETH. To claim your prize, connect your MetaMask wallet to our smart contract verification node here: http://binance-eth-claim-node.com/verify"
+
+🎣 Category 5: Spear-Phishing & Social Engineering
+Why SenseFlow wins: Highly targeted. RoBERTa analyzes the unusual request for gift cards or unexpected external links.
+
+The CEO Gift Card Dash:
+
+"Are you at your desk? I am tied up in a meeting with a client and need a quick favor. I need to purchase five $100 Apple gift cards for a presentation giveaway. Can you buy them digitally and email me the codes right now? I will expense it back to you this afternoon."
+
+The HR Handbook Update:
+
+"To all employees: Please review the updated 2025 Corporate Benefits and PTO policy. We have made significant changes to the remote work agreement. You must read and acknowledge the new terms by Friday. Document link: http://bamboohr-policy-update.com/doc"
+
+The LinkedIn Recruiter:
+
+"Hi there, I was highly impressed by your background in AI/ML on LinkedIn. My firm is looking for a Lead NLP Engineer with your exact skill set. The salary band is $150k-$180k. Please review the detailed job description and company profile here: http://careers-tech-recruitment.com/JD_PDF.exe"
