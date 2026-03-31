@@ -1,0 +1,33 @@
+# Models (very large files)
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+
+# Data and notebooks
+data/
+notebooks/
+*.ipynb
+
+# Environment
+venv/
+__pycache__/
+.pyc
+.DS_Store
+
+# Temporary
+*.log
+proofs/*.png   # keep this line commented if you want to push screenshots
+
+# Streamlit
+.streamlit/
+models_backup/
+data/
+venv/
+data/
+__pycache__/
+*.pt
+*.h5
+models/
+*.zip
