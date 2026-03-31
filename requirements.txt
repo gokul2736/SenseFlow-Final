@@ -6,3 +6,8 @@ transformers==4.37.0
 streamlit==1.31.0
 lime==0.2.0.1
 regex
+fastapi
+uvicorn
+requests
+spacy
+openpyxl
