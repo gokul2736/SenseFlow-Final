@@ -1,0 +1,246 @@
+  c﻿commit 4ed8804faa5e325232d5f92432be07a92ba8ee93
+Merge: 78187ca 4ec48b2
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Tue Mar 31 14:40:50 2026 +0530
+
+    Merge branch 'main' of https://github.com/gokul2736/SenseFlow-Final
+
+commit 78187caa862ff373f9a431a5dd123b7b247c2136
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Tue Mar 31 14:39:33 2026 +0530
+
+    Ignored large files...i.e models and models_backup and dataset realted folders
+
+ .gitignore  | 4 +++-
+ src/main.py | 3 ++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 4ec48b2b0a856a48a9464c59b6fe17bd84e440ba
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Tue Mar 31 13:58:49 2026 +0530
+
+    Initial commit
+
+ LICENSE | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+commit c05ddf790e023dd70c32d9d2993dee9df959322a
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Tue Mar 31 11:14:12 2026 +0530
+
+    Removed large model backup files to fix GitHub push
+
+ models_backup/deberta/config.json              |     37 -
+ models_backup/deberta/deberta_model.zip        |    Bin 517075083 -> 0 bytes
+ models_backup/deberta/tokenizer.json           | 250439 ----------------------
+ models_backup/deberta/tokenizer_config.json    |     17 -
+ models_backup/distilbert/config.json           |     28 -
+ models_backup/distilbert/distilbert_model.zip  |    Bin 246991388 -> 0 bytes
+ models_backup/distilbert/tokenizer.json        |  30686 ---
+ models_backup/distilbert/tokenizer_config.json |     14 -
+ models_backup/roberta/config.json              |     29 -
+ models_backup/roberta/roberta_model.zip        |    Bin 449371022 -> 0 bytes
+ models_backup/roberta/tokenizer.json           | 250371 ---------------------
+ models_backup/roberta/tokenizer_config.json    |     16 -
+ 12 files changed, 531637 deletions(-)
+
+commit 5d24a539720d373046b77efb4fedb2812b862494
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Tue Mar 31 00:09:49 2026 +0530
+
+    Clean push - removed large models temporarily
+
+ models_backup/deberta/config.json              |     37 +
+ models_backup/deberta/deberta_model.zip        |    Bin 0 -> 517075083 bytes
+ models_backup/deberta/tokenizer.json           | 250439 ++++++++++++++++++++++
+ models_backup/deberta/tokenizer_config.json    |     17 +
+ models_backup/distilbert/config.json           |     28 +
+ models_backup/distilbert/distilbert_model.zip  |    Bin 0 -> 246991388 bytes
+ models_backup/distilbert/tokenizer.json        |  30686 +++
+ models_backup/distilbert/tokenizer_config.json |     14 +
+ models_backup/roberta/config.json              |     29 +
+ models_backup/roberta/roberta_model.zip        |    Bin 0 -> 449371022 bytes
+ models_backup/roberta/tokenizer.json           | 250371 +++++++++++++++++++++
+ models_backup/roberta/tokenizer_config.json    |     16 +
+ src/main.py                                    |      2 +-
+ 13 files changed, 531638 insertions(+), 1 deletion(-)
+
+commit c1b74ca8a27c3222209a658dcaba8f22c3bbf34e
+Merge: 991e880 19f3516
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:53:13 2026 +0530
+
+    Merging branch 'dev'
+
+commit 19f3516890d5dc964628789c36bce5edce9b3522
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:44:59 2026 +0530
+
+    feat: Implement initial project structure including DistilBERT, DeBERTa, and RoBERTa models, preprocessing, application logic, and documentation.
+
+ src/app.py | 141 ++++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 108 insertions(+), 33 deletions(-)
+
+commit b2b47447512d5136c5a896cbc14ee6b3e87908aa
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:39:34 2026 +0530
+
+    Fixed git push - ignored large model files
+
+ .gitignore                              |     44 +-
+ models/deberta/config.json              |     37 -
+ models/deberta/deberta_model.zip        |    Bin 517075083 -> 0 bytes
+ models/deberta/tokenizer.json           | 250439 -----------------------------
+ models/deberta/tokenizer_config.json    |     17 -
+ models/distilbert/config.json           |     28 -
+ models/distilbert/distilbert_model.zip  |    Bin 246991388 -> 0 bytes
+ models/distilbert/tokenizer.json        |  30686 ----
+ models/distilbert/tokenizer_config.json |     14 -
+ models/roberta/config.json              |     29 -
+ models/roberta/roberta_model.zip        |    Bin 449371022 -> 0 bytes
+ models/roberta/tokenizer.json           | 250371 ----------------------------
+ models/roberta/tokenizer_config.json    |     16 -
+ notebooks/DEBERTA.ipynb                 |   7133 -
+ notebooks/DISTILBERT.ipynb              |   2471 -
+ notebooks/ROBERTA.ipynb                 |    111 -
+ notebooks/preprocessing2.ipynb          |    441 -
+ 17 files changed, 20 insertions(+), 541817 deletions(-)
+
+commit e7db6d3d58e78bdbc117cc166e1f5c4196843e58
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:24:55 2026 +0530
+
+    Integrated RoBERTa model with working demo
+
+ .gitignore           | 30 +++++++++++++---------
+ .pylintrc            | 14 +++++++++++
+ src/__init__.py      |  0
+ src/benchmark.py     | 33 +++++++++++++++----------
+ src/config.py        |  0
+ src/preprocessing.py | 70 +++++++++++++++++++++++++++-------------------------
+ 6 files changed, 89 insertions(+), 58 deletions(-)
+
+commit e1a3c76e34c2595d5163c8582bf7e323a38da0c7
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:24:55 2026 +0530
+
+    Added clean FastAPI backend + Streamlit dashboard
+
+ src/api.py  | 107 ++++++++++++++++++++++++++++++++++++++++++++++--------------
+ src/main.py |  18 ++++++++++
+ 2 files changed, 100 insertions(+), 25 deletions(-)
+
+commit 9bad6b4ae7d06f3a05edda8f1b8dd7be97c22780
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Mon Mar 30 14:24:54 2026 +0530
+
+    Fixed formatting and improved model_utils
+
+ src/app.py         | 136 +++++++++++++++++++++++++----------------------------
+ src/model_utils.py |  74 +++++++++++++++--------------
+ 2 files changed, 104 insertions(+), 106 deletions(-)
+
+commit 3fddcc44e845bab4318afd306756402151d9cc71
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Sun Mar 29 23:49:19 2026 +0530
+
+    feat: Integrated FastAPI backend and secured repo with .gitignore
+
+ .gitignore                                         |     12 +-
+ Google Gemini.pdf                                  |    Bin 0 -> 97455 bytes
+ LICENSE                                            |     21 +
+ ...ing Detector Using Semantic Intent Analysis.pdf |  10260 +
+ docs/logs/Modeldata.md                             |     11 +
+ docs/logs/data_set_spec.md                         |      6 +
+ docs/logs/image.png                                |    Bin 0 -> 258671 bytes
+ docs/logs/requirement_spec.md                      |     11 +
+ docs/logs/trial_error_log.md                       |     28 +
+ models/deberta/config.json                         |     37 +
+ models/deberta/deberta_model.zip                   |    Bin 0 -> 517075083 bytes
+ models/deberta/tokenizer.json                      | 250439 ++++++++++++++++++
+ models/deberta/tokenizer_config.json               |     17 +
+ models/distilbert/config.json                      |     28 +
+ models/distilbert/distilbert_model.zip             |    Bin 0 -> 246991388 bytes
+ models/distilbert/tokenizer.json                   |  30686 +++
+ models/distilbert/tokenizer_config.json            |     14 +
+ models/roberta/config.json                         |     29 +
+ models/roberta/roberta_model.zip                   |    Bin 0 -> 449371022 bytes
+ models/roberta/tokenizer.json                      | 250371 +++++++++++++++++
+ models/roberta/tokenizer_config.json               |     16 +
+ notebooks/DEBERTA.ipynb                            |   7133 +
+ notebooks/DISTILBERT.ipynb                         |   2471 +
+ notebooks/ROBERTA.ipynb                            |    111 +
+ notebooks/preprocessing2.ipynb                     |    441 +
+ prj-related files/Screenshot (347).png             |    Bin 0 -> 323276 bytes
+ .../images/Screenshot 2026-02-24 115035.png        |    Bin 0 -> 48216 bytes
+ prj-related files/images/deberta.jpeg              |    Bin 0 -> 162976 bytes
+ prj-related files/images/distilbert.jpeg           |    Bin 0 -> 154299 bytes
+ prj-related files/images/roberta.jpeg              |    Bin 0 -> 139418 bytes
+ src/api.py                                         |     36 +
+ src/app.py                                         |     79 +
+ src/benchmark.py                                   |     39 +
+ src/model_utils.py                                 |     81 +
+ src/preprocessing.py                               |    133 +
+ 35 files changed, 552508 insertions(+), 2 deletions(-)
+
+commit 991e88014983429dbf466abfe0252a3bd090187d
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Fri Mar 13 05:43:30 2026 +0530
+
+    Update README.md
+
+ README.md | 40 +++++++++++++++++++++++++++++-----------
+ 1 file changed, 29 insertions(+), 11 deletions(-)
+
+commit 74d5978c7e5dda2de6a3874fee3254a0692a404d
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Fri Mar 13 05:42:14 2026 +0530
+
+    Create structure.md
+
+ structure.md | 30 ++++++++++++++++++++++++++++++
+ 1 file changed, 30 insertions(+)
+
+commit a1dbd02a9e69da7eac2181b0d93085eb6409a920
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Wed Mar 11 23:00:35 2026 +0530
+
+    Update README.md
+
+ README.md | 59 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 59 insertions(+)
+
+commit 0954705166133ca0c13ec17b09df518730b6bde4
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Thu Feb 26 11:25:48 2026 +0530
+
+    Update README.md
+
+ README.md | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 2c35ddfabd7a2a2fd2c7b1ac01d8e90ce16bd716
+Author: Gokul <157605364+gokul2736@users.noreply.github.com>
+Date:   Thu Feb 12 13:57:51 2026 +0530
+
+    Update README.md
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 9862a5b5961c6a9e7b3cf3cb5b4afa1436a33ab0
+Author: gokul2736 <gokulm2732006@gmail.com>
+Date:   Thu Feb 12 13:37:12 2026 +0530
+
+    Initial Project Skeleton: Setup folder structure and dependencies
+
+ .gitignore                                         |    12 +
+ README.md                                          |    19 +
+ docs/logs/project_journal.md                       |     0
+ prj-related files/Google Gemini.pdf                |   Bin 0 -> 97455 bytes
+ ...ing Detector Using Semantic Intent Analysis.pdf | 10260 +++++++++++++++++++
+ requirements.txt                                   |     8 +
+ src/app.py                                         |     0
+ src/model_utils.py                                 |     0
+ src/preprocessing.py                               |     0
+ 9 files changed, 10299 insertions(+)
