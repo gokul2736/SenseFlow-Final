@@ -1,16 +1,39 @@
 # SenseFlow: Phishing & Social Engineering Detector
 
-**TLead:** Markandeyan Gokul  
-**TMemb:** Kanamarlapudi Sai Charithanjali 
+**Team:** Markandeyan Gokul, Kanamarlapudi Sai Charithanjali 
 
 ## 📌 Problem Statement
 Traditional antivirus systems use signature-based detection, which fails against "Clean Attacks" (Business Email Compromise). SenseFlow uses **Semantic Analysis (BERT)** to detect psychological triggers like Urgency and Authority.
 
 ## 🚀 Tech Stack
-* **AI Engine:** Google BERT (via Hugging Face Transformers)
-* **Explainability:** LIME (Local Interpretable Model-agnostic Explanations)
+* **AI Engine:** Google BERT (via Hugging Face Transformers)-Roberta Model
+* **Explainability:** LIME (Local Interpretable Model-agnostic Explanations) through Llama X-AI
 * **Frontend:** Streamlit
 * **Backend:** PyTorch & Python 3.9+
+
+
+## Setup  
+### i) Clone the repository to local 
+```
+git clonehttps://github.com/gokul2736/SenseFlow-Final.git
+```
+
+### ii) Create a virtual Environment
+### iii) Activate Venv
+### iv) install requirements 
+ ```
+pip install requirements
+```
+### v) run the model in cpu
+```
+python src/main.py
+```
+### vi) run Streamlit for interface
+```
+streamlit run src/app.py
+```
+
+[Download Roberta - Model data through drive link ](https://drive.google.com/drive/folders/1cT2ODJgLEoATLFfN_wWPhffZid-mcVhH?usp=sharing)
 
 ##  Project Structure
 ```
@@ -32,7 +55,9 @@ SenseFlow/
 │
 ├── src/                      # Application source code
 │   ├── app.py
+|   ├── api.py
 │   ├── model_utils.py
+|   ├── main.py
 │   ├── preprocessing.py
 │   └── benchmark.py
 │
